@@ -1,12 +1,12 @@
 ---
-title: "{{ replace .TranslationBaseName "-" " " | title }}"
+title: "About"
 subtitle: ""
-date: {{ .Date }}
-lastmod: {{ .Date }}
-draft: true
+date: 2022-01-03T17:02:47+08:00
+lastmod: 2022-01-03T17:02:47+08:00
+draft: false
 author: "YehowahLiu"
 authorLink: "https://blog.redme.cc/"
-description: "未提供描述~"
+description: "我是谁"
 
 tags: []
 categories: []
@@ -24,3 +24,7 @@ math:
 lightgallery: false
 license: "CC BY-NC 4.0"
 ---
+
+### 我是谁？
+
+YehowahLiu
