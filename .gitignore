@@ -1,3 +1,6 @@
+# binary file
+*.exe
+
 # hugo build file
 resources/
 public/
