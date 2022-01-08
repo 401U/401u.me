@@ -355,3 +355,11 @@ enableEmoji = true
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
   taxonomyTerm = ["HTML"]
+
+# 自定义菜单项
+[menu]
+  [[menu.main]]
+    name = "关于"
+    identifier = "about"
+    url = "/about"
+    weight = "10"
