@@ -1,18 +1,17 @@
 ---
-title: "About"
+title: "Helloworld"
 subtitle: ""
-date: 2022-01-08T11:53:40+08:00
-lastmod: 2022-01-08T11:53:40+08:00
-draft: false
+date: 2022-01-08T13:04:57+08:00
+lastmod: 2022-01-08T13:04:57+08:00
 author: "YehowahLiu"
 authorLink: "https://blog.redme.cc/"
-description: "关于我"
+description: "第一篇文章哦~"
 
 tags: []
 categories: []
 
-hiddenFromHomePage: true
-hiddenFromSearch: true
+hiddenFromHomePage: false
+hiddenFromSearch: false
 
 featuredImage: ""
 featuredImagePreview: ""
@@ -24,6 +23,8 @@ math:
 lightgallery: false
 license: "CC BY-NC 4.0"
 ---
-YehowahLiu
-- 本科软件工程在读
-- 爱玩MC
+Hello, World!
+
+```python
+print("Hello, world!")
+```

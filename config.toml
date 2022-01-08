@@ -25,7 +25,7 @@ enableEmoji = true
   # 公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效
   gitRepo = "https://github.com/YehowahLiu/yehowahliu.github.io"
   # 哪种哈希函数用来 SRI, 为空时表示不使用 SRI ("sha256", "sha384", "sha512", "md5")
-  fingerprint = ""
+  fingerprint = "md5"
   # 日期格式
   dateFormat = "2006-01-02"
   # 网站图片, 用于 Open Graph 和 Twitter Cards
@@ -156,17 +156,17 @@ enableEmoji = true
     [params.page.share]
       enable = true
       Twitter = true
-      Facebook = true
+      Facebook = false
       Linkedin = false
       Whatsapp = false
       Pinterest = false
       Tumblr = false
-      HackerNews = true
+      HackerNews = false
       Reddit = false
       VK = false
       Buffer = false
       Xing = false
-      Line = true
+      Line = false
       Instapaper = false
       Pocket = false
       Digg = false
@@ -189,7 +189,7 @@ enableEmoji = true
       [params.page.comment.utterances]
         enable = false
         # owner/repo
-        repo = ""
+        repo = "YehowahLiu/yehowahliu.github.io"
         issueTerm = "pathname"
         label = ""
         lightTheme = "github-light"

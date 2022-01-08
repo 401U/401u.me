@@ -1,3 +1,4 @@
+# hugo build file
 resources/
 public/
 .hugo_build.lock
