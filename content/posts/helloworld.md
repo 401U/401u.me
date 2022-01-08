@@ -6,8 +6,8 @@ author: "YehowahLiu"
 authorLink: "https://blog.redme.cc/"
 description: "第一篇文章哦~"
 
-tags: []
-categories: []
+tags: ["hugo", "markdown", "test"]
+categories: ["杂项"]
 
 hiddenFromHomePage: false
 hiddenFromSearch: false

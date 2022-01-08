@@ -2,7 +2,6 @@
 title: "About"
 subtitle: ""
 date: 2022-01-08T11:53:40+08:00
-lastmod: 2022-01-08T11:53:40+08:00
 draft: false
 author: "YehowahLiu"
 authorLink: "https://blog.redme.cc/"
@@ -27,3 +26,5 @@ license: "CC BY-NC 4.0"
 YehowahLiu
 - 本科软件工程在读
 - 爱玩MC
+
+**此页面尚未完工**
