@@ -27,6 +27,8 @@ Hello, World!
 
 下面是markdown样式测试
 
+<!--more-->
+
 # 一级标题
 
 ## 二级标题

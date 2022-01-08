@@ -153,7 +153,7 @@ enableEmoji = true
       maxShownLines = 10
     # KaTeX 数学公式配置 (KaTeX https://katex.org/)
     [params.page.math]
-      enable = false
+      enable = true
       # 默认块定界符是 $$ ... $$ 和 \\[ ... \\]
       blockLeftDelimiter = ""
       blockRightDelimiter = ""
@@ -164,7 +164,7 @@ enableEmoji = true
       # KaTeX 插件 copy_tex
       copyTex = true
       # KaTeX 插件 mhchem
-      mhchem = true
+      mhchem = false
     # Mapbox GL JS 配置 (Mapbox GL JS https://docs.mapbox.com/mapbox-gl-js)
     [params.page.mapbox]
       # Mapbox GL JS 的 access token
