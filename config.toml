@@ -33,8 +33,9 @@ enableEmoji = true
 
   [params.reward]   # 文章打赏
     enable = true
-    wechat = "/wechat.png"           # 微信二维码
-    alipay = "/alipay.png"           # 支付宝二维码
+    # wechat = "/wechat.png"           # 微信二维码
+    # alipay = "/alipay.png"           # 支付宝二维码
+    afdian = "401Unauthorized"
 
 
   # 页面头部导航栏配置

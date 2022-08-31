@@ -21,7 +21,7 @@ math:
   enable: false
 lightgallery: false
 license: "CC BY-NC 4.0"
-reward: false
+reward: true
 ---
 Hello, World!
 
