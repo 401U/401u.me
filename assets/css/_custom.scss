@@ -4,10 +4,11 @@
 // ==============================
 
 // ========== sakana ========== 
-#sakana-widget {
+html .sakana-box{
     position: fixed;
-    bottom: 20px;
-    right: 100px;
+    right: 0;
+    bottom: 0;
+    transform-origin: 100% 100%; /* 从右下开始变换 */
 }
 
 /* Github Corner */

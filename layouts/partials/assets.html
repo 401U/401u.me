@@ -5,17 +5,16 @@
 
 
 {{- /* @Custom 引入sakana */ -}}
-<div id="sakana-widget"></div>
+<div class="sakana-box"></div>
+<script src="https://cdn.jsdelivr.net/npm/sakana"></script>
 <script>
-    function initSakanaWidget() {
-        new SakanaWidget().mount('#sakana-widget');
-    }
+Sakana.init({
+  el:         '.sakana-box',     // 启动元素 node 或 选择器
+  scale:      .5,                // 缩放倍数
+  canSwitchCharacter: true,      // 允许换角色
+});
+Sakana.setMute(false);
 </script>
-<script
-    async
-    onload="initSakanaWidget()"
-    src="https://cdn.jsdelivr.net/npm/sakana-widget@2.2.1/lib/sakana.min.js"
-></script>
 
 {{- /* Smooth Scroll */ -}}
 {{- $source := $cdn.smoothScrollJS | default "lib/smooth-scroll/smooth-scroll.min.js" -}}
