@@ -4,7 +4,7 @@ subtitle: ""
 date: {{ .Date }}
 draft: true
 author: "YehowahLiu"
-authorLink: "https://blog.redme.cc/"
+authorLink: "https://blog.4o1.to/"
 description: "未提供描述~"
 
 tags: []
