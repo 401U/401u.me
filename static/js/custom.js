@@ -13,7 +13,7 @@ function runtime() {
     let leavel3 = leavel2 % (60 * 1000);
     let seconds = Math.floor(leavel3 / (1000));
     let runbox = document.getElementById('run-time');
-    runbox.innerHTML = '本站已运行<i class="far fa-clock fa-fw"></i> '
+    runbox.innerHTML = '<i class="fas fa-cog fa-spin fa-fw"></i>本站已运行 <i class="far fa-clock fa-fw"></i> '
         + ((days < 10) ? '0' : '') + days + ' 天 '
         + ((hours < 10) ? '0' : '') + hours + ' 时 '
         + ((minutes < 10) ? '0' : '') + minutes + ' 分 '
@@ -227,8 +227,9 @@ function checkcdn(){
         'PER': 'Perth, WA, 🇦🇺 Australia',
         'SYD': 'Sydney, NSW, 🇦🇺 Australia'
     };
+    let text = '<object data="cloudflare.svg" type="image/svg+xml"></object> CDN节点 ';
     let cdnelement = document.getElementById("cdn-info");
-    cdnelement.innerHTML = "正在检查CDN节点..."
+    cdnelement.innerHTML = text + '未知';
     $(document).ready(
         $.ajax({
             url: "/cdn-cgi/trace",
@@ -236,13 +237,13 @@ function checkcdn(){
                 
                 let area = data.split("colo=")[1].split("\n")[0];
                 if(areas[area]){
-                    cdnelement.innerHTML = "您连接的CDN节点为 " + areas[area];
+                    cdnelement.innerHTML = text + areas[area];
                 }else{
-                    cdnelement.innerHTML = "您连接的CDN节点为 " + area;
+                    cdnelement.innerHTML = text + area;
                 }
             },
             error: function(){
-                cdnelement.innerHTML = "您连接的CDN节点为 未知"
+                cdnelement.innerHTML = text + '未知';
             }
         }
         )
@@ -258,3 +259,5 @@ Sakana.setMute(false);
 
 checkcdn();
 runtime();
+
+document.getElementById("uvinfo").innerHTML = '<i class="fa fa-eye"></i><span id="busuanzi_value_site_pv"></span> 次 | <i class="fa fa-user"></i><span id="busuanzi_value_site_uv"></span> 人';
