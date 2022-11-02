@@ -85,7 +85,7 @@ enableEmoji = true
   [params.footer]
     enable = true
     # 自定义内容 (支持 HTML 格式)
-    custom = ''
+    custom = '<div class="footer-line"><span id="run-time"></span></div> <div class="footer-line"><span id="cdn-info"></span></div> <div class="sakana-box"></div>'
     # 是否显示 Hugo 和主题信息
     hugo = true
     # 是否显示版权信息
