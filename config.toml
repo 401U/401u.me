@@ -222,13 +222,29 @@ enableEmoji = true
       enable = true
       # Utterances comment 评论系统设置 (https://utteranc.es/)
       [params.page.comment.utterances]
-        enable = true
+        enable = false
         # owner/repo
         repo = "YehowahLiu/blog.4o1.to"
         issueTerm = "pathname"
         label = ""
         lightTheme = "github-light"
         darkTheme = "github-dark"
+      [params.page.comment.giscus]
+        # 你可以参考官方文档来使用下列配置
+        enable = true
+        repo = "YehowahLiu/blog.4o1.to"
+        repoId = "R_kgDOGnbI2g"
+        category = "BlogComments"
+        categoryId = "DIC_kwDOGnbI2s4CSXTI"
+        # 为空时自动适配当前主题 i18n 配置
+        lang = "zh-CN"
+        mapping = "pathname"
+        reactionsEnabled = "1"
+        emitMetadata = "0"
+        inputPosition = "bottom"
+        lazyLoading = true
+        lightTheme = "light"
+        darkTheme = "dark"
     # 第三方库配置
     [params.page.library]
       [params.page.library.css]
