@@ -74,17 +74,21 @@ enableEmoji = true
     [params.home.posts]
       enable = true
       paginate = 3
-  [params.social]
-    GitHub = "YehowahLiu"
-    Twitter = "YehowahLiu"
-    Telegram = "YehowahLiu"
-    Zhihu = "YehowahLiu"
-    Devto = "yehowahliu"
-    Weibo = "6053229136"
-    Steam = "YehowahLiu"
-    Bilibili = "54438788"
-    Email = "yehowahliu@4o1.to"
-    RSS = true
+    [params.social]
+      GitHub = "YehowahLiu"
+      Telegram = "YehowahLiu"
+      Bilibili = "54438788"
+      Email = "yehowahliu@4o1.to"
+      RSS = true
+      [params.social.Mastodon]
+        # 排列图标时的权重 (权重越大, 图标的位置越靠后)
+        weight = 0
+        # 你的社交 ID
+        id = "@YehowahLiu"
+        # 你的社交链接的前缀
+        prefix = "https://eihei.net/"
+        # 当鼠标停留在图标上时的提示内容
+        title = "Mastodon"
 
   # 页面底部信息配置
   [params.footer]
