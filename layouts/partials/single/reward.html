@@ -1,9 +1,0 @@
-{{ if or .Params.reward (and .Site.Params.reward.enable (ne .Params.reward false)) -}}
-<div class="post-reward">
-    <iframe id="afdian_leaflet_{{.Site.Params.reward.afdian}}" src="https://afdian.net/leaflet?slug={{.Site.Params.reward.afdian}}"
-    width="100%" scrolling="no" height="200" frameborder="0"></iframe>
-    <script>
-        document.body.clientWidth< 700 ? document.getElementById("afdian_leaflet_{{.Site.Params.reward.afdian}}").width = "100%" : document.getElementById("afdian_leaflet_{{.Site.Params.reward.afdian}}").width = "640"
-    </script>
-</div>
-{{- end }}
