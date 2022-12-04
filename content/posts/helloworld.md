@@ -7,21 +7,9 @@ authorLink: "https://blog.4o1.to/"
 description: "第一篇文章哦~"
 
 tags: ["hugo", "markdown", "test"]
+alias: ["/2022/01/helloworld"]
 categories: ["杂项"]
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
-
-featuredImage: ""
-featuredImagePreview: ""
-
-toc:
-  enable: true
-math:
-  enable: false
-lightgallery: false
 license: "CC BY-NC 4.0"
-reward: true
 ---
 Hello, World!
 
