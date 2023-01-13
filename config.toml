@@ -46,7 +46,7 @@ enableEmoji = true
     pre = ""
     post = ""
     name = "分类"
-    url = "/categories"
+    url = "/categories/"
     title = ""
     weight = 2
     [menu.main.params]
@@ -89,13 +89,13 @@ enableEmoji = true
   gitRepo = "https://github.com/YehowahLiu/blog.4o1.to"
   # FixIt 0.1.1 | NEW which hash function used for SRI, when empty, no SRI is used
   # ["sha256", "sha384", "sha512", "md5"]
-  fingerprint = ""
+  fingerprint = "md5"
   # FixIt 0.2.0 | NEW date format
   dateFormat = "2006-01-02"
   # website images for Open Graph and Twitter Cards
   images = []
   # FixIt 0.2.12 | NEW enable PWA
-  enablePWA = true
+  enablePWA = false
   # FixIt 0.2.14 | NEW whether to add external Icon for external links automatically
   externalIcon = true
   # FixIt 0.2.14 | NEW FixIt will, by default, inject a theme meta tag in the HTML head on the home page only.
@@ -140,6 +140,17 @@ enableEmoji = true
       index = ""
       appID = ""
       searchKey = ""
+    [params.search.fuse]
+      # FixIt 0.2.17 | NEW https://fusejs.io/api/options.html
+      isCaseSensitive = false
+      minMatchCharLength = 2
+      findAllMatches = false
+      location = 0
+      threshold = 0.3
+      distance = 100
+      ignoreLocation = false
+      useExtendedSearch = false
+      ignoreFieldNorm = false
 
   # Header config
   [params.header]
@@ -169,6 +180,9 @@ enableEmoji = true
   # Footer config
   [params.footer]
     enable = true
+    # FixIt 0.2.17 | CHANGED Custom content (HTML format is supported)
+    # For advanced use, see parameter `params.customFilePath.footer`
+    custom = ""
     # FixIt 0.2.0 | NEW whether to show Hugo and theme info
     hugo = true
     # FixIt 0.2.0 | NEW whether to show copyright info
@@ -177,8 +191,6 @@ enableEmoji = true
     author = false
     # Site creation year
     since = 2022
-    # FixIt 0.2.14 | NEW Site creation time
-    siteTime = "2022-03-01T16:52:00+08:00" # e.g. "2021-12-18T16:15:22+08:00"
     # FixIt 0.2.14 | NEW whether to show total word count of site content
     wordCount = true
     # FixIt 0.2.12 | NEW Public network security only in China (HTML format is supported)
@@ -187,7 +199,20 @@ enableEmoji = true
     icp = "<a href=\"https://icp.gov.moe/?keyword=20227401\" target=\"_blank\">萌ICP备20227401号</a>"
     # license info (HTML format is supported)
     license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
-
+  # FixIt 0.2.17 | CHANGED Site creation time
+  [params.footer.siteTime]
+    enable = true
+    animate = true
+    icon = "fa-solid fa-heartbeat"
+    pre = ""
+    value = "2022-03-01T16:52:00+08:00"
+  # FixIt 0.2.17 | NEW footer lines order, optional values: ["first", 0, 1, 2, 3, 4, 5, "last"]
+  [params.footer.order]
+    powered = 0
+    copyright = 0
+    statistics = 0
+    visitor = 0
+    beian = 0
   # FixIt 0.2.0 | NEW Section (all posts) page config
   [params.section]
     # special amount of posts in each section page
@@ -333,6 +358,8 @@ enableEmoji = true
     RootMe = ""
     Feishu = ""
     TryHackMe = ""
+    Douyin = ""
+    TikTok = ""
     Phone = ""
     Email = "yehowahliu@4o1.to"
     RSS = true
@@ -455,7 +482,7 @@ enableEmoji = true
       animation = true
       # position relative to post footer, optional values: ["before", "after"]
       position = "after"
-      # comment = "Buy me a coffee"
+      comment = "Buy me a coffee"
       [params.page.reward.ways]
         # wechatpay = "/images/wechatpay.png"
         alipay = "/images/alipay.png"
@@ -772,6 +799,18 @@ enableEmoji = true
     light = ""
     dark = ""
     height = "2px"
+
+  # FixIt 0.2.17 | NEW Progress bar in the top during page loading.
+  # For more information: https://github.com/CodeByZach/pace
+  [params.pace]
+    enable = true
+    # All available colors:
+    # ["black", "blue", "green", "orange", "pink", "purple", "red", "silver", "white", "yellow"]
+    color = "blue"
+    # All available themes:
+    # ["barber-shop", "big-counter", "bounce", "center-atom", "center-circle", "center-radar", "center-simple",
+    # "corner-indicator", "fill-left", "flash", "flat-top", "loading-bar", "mac-osx", "material", "minimal"]
+    theme = "corner-indicator"
   
   # FixIt 0.2.17 | NEW Define custom file paths
   # Create your custom files in site directory `layouts/partials/custom` and uncomment needed files below
