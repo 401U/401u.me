@@ -408,6 +408,8 @@ enableEmoji = true
     readingTime = true
     # FixIt 0.2.17 | NEW end of post flag
     endFlag = ""
+    # FixIt 0.2.18 | NEW whether to enable instant.page
+    instantPage = true
 
     # FixIt 0.2.15 | NEW Repost config
     [params.page.repost]
@@ -478,7 +480,7 @@ enableEmoji = true
       fullscreen = true
     # FixIt 0.2.17 | NEW Donate (Sponsor) settings
     [params.page.reward]
-      enable = false
+      enable = true
       animation = true
       # position relative to post footer, optional values: ["before", "after"]
       position = "after"
