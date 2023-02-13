@@ -2,7 +2,7 @@ baseURL = "https://blog.4o1.to"
 defaultContentLanguage = "zh-cn"
 theme = "FixIt"
 themesDir = "themes"
-title = "YehowahLiu 的小窝"
+title = "401Unauthorized 的小窝"
 hasCJKLanguage = true
 enableRobotsTXT = true
 enableGitInfo = true
@@ -80,13 +80,13 @@ enableEmoji = true
   # FixIt 0.2.15 | CHANGED FixIt theme version
   version = "0.2.X" # e.g. "0.2.X", "0.2.15", "v0.2.15" etc.
   # site description
-  description = "YehowahLiu 的小窝"
+  description = "401Unauthorized 的小窝"
   # site keywords
   keywords = ["Hugo", "FixIt"]
   # site default theme ["light", "dark", "auto"]
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
-  gitRepo = "https://github.com/YehowahLiu/blog.4o1.to"
+  gitRepo = "https://github.com/401U/blog.4o1.to"
   # FixIt 0.1.1 | NEW which hash function used for SRI, when empty, no SRI is used
   # ["sha256", "sha384", "sha512", "md5"]
   fingerprint = "md5"
@@ -105,7 +105,7 @@ enableEmoji = true
   # FixIt 0.2.0 | NEW App icon config
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
-    title = "YehowahLiu 的小窝"
+    title = "401Unauthorized 的小窝"
     # whether to omit favicon resource links
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
@@ -163,7 +163,7 @@ enableEmoji = true
       # URL of the LOGO
       logo = ""
       # title name
-      name = "YehowahLiu 的小窝"
+      name = "401Unauthorized 的小窝"
       # you can add extra information before the name (HTML format is supported), such as icons
       pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
@@ -259,7 +259,7 @@ enableEmoji = true
       # FixIt 0.2.17 | NEW identifier of avatar menu link
       avatarMenu = ""
       # FixIt 0.2.7 | CHANGED title shown in home page (HTML format is supported)
-      title = "YehowahLiu"
+      title = "401Unauthorized"
       # subtitle shown in home page
       subtitle = "生活奇奇怪怪, 我要可可爱爱"
       # whether to use typeit animation for subtitle
@@ -276,9 +276,9 @@ enableEmoji = true
 
   # FixIt 0.2.16 | CHANGED Social config about the author
   [params.social]
-    GitHub = "YehowahLiu"
+    GitHub = "401U"
     Linkedin = ""
-    Twitter = ""
+    Twitter = "YehowahLiu"
     Instagram = ""
     Facebook = ""
     Telegram = "YehowahLiu"
@@ -361,15 +361,15 @@ enableEmoji = true
     Douyin = ""
     TikTok = ""
     Phone = ""
-    Email = "yehowahliu@4o1.to"
+    Email = "hi@4o1.to"
     RSS = true
     [params.social.Mastodon]
       # 排列图标时的权重 (权重越大, 图标的位置越靠后)
       weight = 0
       # 你的社交 ID
-      id = "@YehowahLiu"
+      id = "@401Unauthorized"
       # 你的社交链接的前缀
-      prefix = "https://eihei.net/"
+      prefix = "https://mastodon.social/"
       # 当鼠标停留在图标上时的提示内容
       title = "Mastodon"
 
@@ -461,7 +461,7 @@ enableEmoji = true
       # FixIt 0.2.15 | CHANGED Link for fork & edit
       # url = "/edit/branch-name/subdirectory-name" # base on `params.gitRepo`
       # url = "https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name" # full url
-      url = "https://github.com/YehowahLiu/blog.4o1.to/edit/main/content"
+      url = "https://github.com/401U/blog.4o1.to/edit/main/content"
     # FixIt 0.2.0 | NEW Mapbox GL JS config (https://docs.mapbox.com/mapbox-gl-js)
     [params.page.mapbox]
       # access token of Mapbox GL JS
@@ -630,7 +630,7 @@ enableEmoji = true
       # FixIt 0.2.14 | NEW Giscus comments config
       [params.page.comment.giscus]
         enable = true
-        repo = "YehowahLiu/blog.4o1.to"
+        repo = "401U/blog.4o1.to"
         repoId = "R_kgDOGnbI2g"
         category = "BlogComments"
         categoryId = "DIC_kwDOGnbI2s4CSXTI"
@@ -662,7 +662,7 @@ enableEmoji = true
       images = []
       # Publisher info
       [params.page.seo.publisher]
-        name = "YehowahLiu"
+        name = "401Unauthorized"
         logoUrl = "/avatar.jpg"
 
   # FixIt 0.2.5 | NEW TypeIt config
@@ -775,7 +775,7 @@ enableEmoji = true
   # FixIt 0.2.14 | NEW GitHub banner in the top-right or top-left corner
   [params.githubCorner]
     enable = true
-    permalink = "https://github.com/YehowahLiu"
+    permalink = "https://github.com/401U"
     title = "在 GitHub 关注我"
     position = "left" # ["left", "right"]
 
@@ -873,8 +873,8 @@ enableEmoji = true
 
 # 作者配置
 [author]
-  name = "YehowahLiu"
-  email = "yehowahliu@4o1.to"
+  name = "401Unauthorized"
+  email = "hi@4o1.to"
   link = "https://blog.4o1.to/"
 
 # 网站地图配置
