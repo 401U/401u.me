@@ -369,9 +369,9 @@ enableEmoji = true
       # 你的社交 ID
       id = "@401Unauthorized"
       # 你的社交链接的前缀
-      prefix = "https://mastodon.social/"
+      prefix = "https://misskey.io/"
       # 当鼠标停留在图标上时的提示内容
-      title = "Mastodon"
+      title = "Misskey"
 
   # FixIt 0.2.0 | CHANGED Page config
   [params.page]
