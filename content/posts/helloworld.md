@@ -3,7 +3,7 @@ title: "Helloworld"
 subtitle: ""
 date: 2022-01-08T13:04:57+08:00
 author: "YehowahLiu"
-authorLink: "https://blog.4o1.to/"
+authorLink: "https://401u.me/"
 description: "第一篇文章哦~"
 
 tags: ["hugo", "markdown", "test"]

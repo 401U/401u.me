@@ -1,4 +1,4 @@
-baseURL = "https://blog.4o1.to"
+baseURL = "https://401u.me"
 defaultContentLanguage = "zh-cn"
 theme = "FixIt"
 themesDir = "themes"
@@ -86,7 +86,7 @@ enableEmoji = true
   # site default theme ["light", "dark", "auto"]
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
-  gitRepo = "https://github.com/401U/blog.4o1.to"
+  gitRepo = "https://github.com/401U/401u.me"
   # FixIt 0.1.1 | NEW which hash function used for SRI, when empty, no SRI is used
   # ["sha256", "sha384", "sha512", "md5"]
   fingerprint = "md5"
@@ -278,10 +278,10 @@ enableEmoji = true
   [params.social]
     GitHub = "401U"
     Linkedin = ""
-    Twitter = "YehowahLiu"
+    Twitter = ""
     Instagram = ""
     Facebook = ""
-    Telegram = "YehowahLiu"
+    Telegram = ""
     Medium = ""
     Gitlab = ""
     Youtubelegacy = ""
@@ -461,7 +461,7 @@ enableEmoji = true
       # FixIt 0.2.15 | CHANGED Link for fork & edit
       # url = "/edit/branch-name/subdirectory-name" # base on `params.gitRepo`
       # url = "https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name" # full url
-      url = "https://github.com/401U/blog.4o1.to/edit/main/content"
+      url = "https://github.com/401U/401u.me/edit/main/content"
     # FixIt 0.2.0 | NEW Mapbox GL JS config (https://docs.mapbox.com/mapbox-gl-js)
     [params.page.mapbox]
       # access token of Mapbox GL JS
@@ -630,7 +630,7 @@ enableEmoji = true
       # FixIt 0.2.14 | NEW Giscus comments config
       [params.page.comment.giscus]
         enable = true
-        repo = "401U/blog.4o1.to"
+        repo = "401U/401u.me"
         repoId = "R_kgDOGnbI2g"
         category = "BlogComments"
         categoryId = "DIC_kwDOGnbI2s4CSXTI"
@@ -874,7 +874,7 @@ enableEmoji = true
 [author]
   name = "401Unauthorized"
   email = "hi@4o1.to"
-  link = "https://blog.4o1.to/"
+  link = "https://401u.me/"
 
 # 网站地图配置
 [sitemap]

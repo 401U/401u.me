@@ -3,8 +3,8 @@ title: "{{ replace .TranslationBaseName "-" " " | title }}"
 subtitle: ""
 date: {{ .Date }}
 draft: true
-author: "YehowahLiu"
-authorLink: "https://blog.4o1.to/"
+author: "401Unauthorized"
+authorLink: "https://401u.me/"
 description: "未提供描述~"
 
 tags: []
