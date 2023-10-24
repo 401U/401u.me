@@ -654,7 +654,6 @@ enableEmoji = true
         # located in "assets/"
         # Or
         # someJavascript = "https://cdn.example.com/some.js"
-        sakana = "https://cdn.jsdelivr.net/npm/sakana"
         jquery = "https://cdn.jsdelivr.net/npm/jquery@2.1.3/dist/jquery.min.js"
     # FixIt 0.2.10 | CHANGED Page SEO config
     [params.page.seo]
