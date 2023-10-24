@@ -177,6 +177,12 @@ enableEmoji = true
       # whether to use typeit animation for subtitle name
       typeit = false
 
+  # FixIt 0.2.18 | NEW Breadcrumb config
+  [params.breadcrumb]
+    enable = false
+    sticky = false
+    showHome = false
+
   # Footer config
   [params.footer]
     enable = true
@@ -331,7 +337,7 @@ enableEmoji = true
     Vine = ""
     Googlescholar = ""
     Researchgate = ""
-    # Mastodon = ""
+    Mastodon = "@401U@mas.to"
     Thingiverse = ""
     Devto = ""
     Gitea = ""
@@ -363,18 +369,11 @@ enableEmoji = true
     Phone = ""
     Email = "hi@4o1.to"
     RSS = true
-    [params.social.Mastodon]
-      # 排列图标时的权重 (权重越大, 图标的位置越靠后)
-      weight = 0
-      # 你的社交 ID
-      id = "@401Unauthorized"
-      # 你的社交链接的前缀
-      prefix = "https://misskey.io/"
-      # 当鼠标停留在图标上时的提示内容
-      title = "Misskey"
 
   # FixIt 0.2.0 | CHANGED Page config
   [params.page]
+    # FixIt 0.2.18 | NEW whether to enable the author's avatar of the post
+    authorAvatar = true
     # FixIt 0.2.0 | NEW whether to hide a page from home page
     hiddenFromHomePage = false
     # FixIt 0.2.0 | NEW whether to hide a page from search results
@@ -382,6 +381,7 @@ enableEmoji = true
     # FixIt 0.2.0 | NEW whether to enable twemoji
     twemoji = true
     # whether to enable lightgallery
+    # FixIt 0.2.18 | CHANGED if set to "force", images in the content will be forced to shown as the gallery.
     lightgallery = false
     # FixIt 0.2.0 | NEW whether to enable the ruby extended syntax
     ruby = true
@@ -484,7 +484,9 @@ enableEmoji = true
       animation = true
       # position relative to post footer, optional values: ["before", "after"]
       position = "after"
-      comment = "Buy me a coffee"
+      # comment = "Buy me a coffee"
+      # FixIt 0.2.18 | NEW display mode of QR code images, optional values: ["static", "fixed"], default: `static`
+      mode = "static"
       [params.page.reward.ways]
         # wechatpay = "/images/wechatpay.png"
         alipay = "/images/alipay.png"
@@ -537,6 +539,17 @@ enableEmoji = true
         # It take effect when `params.page.lightgallery` is enabled
         lightgallery = false
         locale = "" # FixIt 0.2.15 | NEW
+        # FixIt 0.2.18 | NEW
+        emoticons = ""
+        nestMax = 2
+        nestSort = "DATE_ASC" # ["DATE_ASC", "DATE_DESC", "VOTE_UP_DESC"]
+        vote = true
+        voteDown = false
+        uaBadge = true
+        listSort = true
+        imgUpload = true
+        preview = true
+        versionCheck = true
       # FixIt 0.1.1 | NEW Disqus comment config (https://disqus.com)
       [params.page.comment.disqus]
         enable = false
@@ -588,6 +601,7 @@ enableEmoji = true
         texRenderer = false # FixIt 0.2.16 | NEW
         search = false # FixIt 0.2.16 | NEW
         recaptchaV3Key = "" # FixIt 0.2.16 | NEW
+        reaction = false # FixIt 0.2.18 | NEW
       # Facebook comment config (https://developers.facebook.com/docs/plugins/comments)
       [params.page.comment.facebook]
         enable = false
@@ -635,6 +649,7 @@ enableEmoji = true
         category = "BlogComments"
         categoryId = "DIC_kwDOGnbI2s4CSXTI"
         mapping = "pathname"
+        strict = "0" # FixIt NEW | 0.2.18
         reactionsEnabled = "1"
         emitMetadata = "0"
         inputPosition = "top" # top, bottom
@@ -674,6 +689,8 @@ enableEmoji = true
     cursorChar = "|"
     # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
     duration = -1
+    # FixIt 0.2.18 | NEW whether your strings will continuously loop after completing
+    loop = false
 
   # FixIt 0.2.15 | NEW Mermaid config
   [params.mermaid]
@@ -780,6 +797,8 @@ enableEmoji = true
 
   # FixIt 0.2.14 | NEW Gravatar config
   [params.gravatar]
+    # FixIt 0.2.18 | NEW Depends on the author's email, if the author's email is not set, the local avatar will be used
+    enable = true
     # Gravatar host, default: "www.gravatar.com"
     host = "www.gravatar.com" # ["cn.gravatar.com", "gravatar.loli.net", ...]
     style = "mp" # ["", "mp", "identicon", "monsterid", "wavatar", "retro", "blank", "robohash"]
