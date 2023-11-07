@@ -436,7 +436,7 @@ enableEmoji = true
       closeComment = false
     # FixIt 0.2.16 | CHANGED KaTeX mathematical formulas (https://katex.org)
     [params.page.math]
-      enable = true
+      enable = false
       # default inline delimiter is $ ... $ and \( ... \)
       inlineLeftDelimiter = ""
       inlineRightDelimiter = ""
@@ -651,7 +651,7 @@ enableEmoji = true
         mapping = "pathname"
         strict = "0" # FixIt NEW | 0.2.18
         reactionsEnabled = "1"
-        emitMetadata = "0"
+        emitMetadata = "1"
         inputPosition = "top" # top, bottom
         lightTheme = "light"
         darkTheme = "dark"
@@ -767,7 +767,7 @@ enableEmoji = true
 
   # FixIt 0.2.7 | NEW Cookie consent config
   [params.cookieconsent]
-    enable = true
+    enable = false # disabled because it shows warn: net::ERR_BLOCKED_BY_CLIENT
     # text strings used for Cookie consent banner
     [params.cookieconsent.content]
       message = ""
